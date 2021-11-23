@@ -1,0 +1,17 @@
+.Resume{
+    width: 100%;
+    height: 100vh;
+}
+.Resume .content{
+    position: absolute;
+    width: 700px;
+    height: 950px;
+    border: 5px solid black;
+    left: 34%;
+    top:2%
+}
+.Resume .content img{
+    position: absolute;
+    width: 700px;
+    height: 950px;
+}

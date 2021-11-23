@@ -1,0 +1,37 @@
+.SkillMeter{
+    width: 900px;
+    height: 40px;
+}
+.SkillMeter ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.SkillMeter ul li{
+    float: left;
+}
+.SkillMeter .name{
+    margin:0;
+    font-size: 28px;
+    color: #000000;
+}
+.SkillMeter .meter-bar{
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: rgb(0, 0, 0) solid 5px;
+    width: 300px;
+    height: 15px;
+}
+.SkillMeter .percentage{
+    margin:0;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4dff97;
+}
+.SkillMeter .meter-fill{
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+}

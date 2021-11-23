@@ -1,0 +1,19 @@
+
+.Project_card .image{
+    opacity: 0.4;
+    margin-left: 15px;
+    width: 287px;
+    height: 343px;
+}
+.Project_card .image:hover{
+    transition: 0.4s;
+    opacity: 1;
+    margin-left: 15px;
+    width: 287px;
+    height: 343px;
+}
+.Project_card .image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

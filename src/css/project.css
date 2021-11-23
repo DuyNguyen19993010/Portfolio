@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.Project{
+    height: 100%;
+    background-color: transparent;
+}
+.Project .content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+    width: 100%;
+}
+.Project .content .skills{
+    height: 95%;
+    border-right: 8px solid #000000;
+}
+.Project .content .skills .skill-listing{
+    margin-left: 100px;
+}
+.Project .content .skills .skill-listing .SkillMeter{
+    margin-bottom:70px;
+}
+.Project .skill-logo{
+    margin:0;
+    font-size: 160px;
+    margin-left: 150px;
+    color: rgb(0, 0, 0)
+}
+.Project .project-logo{
+    margin:0;
+    margin-left: 450px;
+    font-size: 160px;
+    color: #14131A;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255) ;
+}
+.Project .projects .projects-listing{
+    margin-left: 150px;
+    margin-top: 40px;
+    text-align: center;
+    height: 700px;
+}
+.Project .projects .projects-listing .project{
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+}
+.Project .projects .projects-listing .project .info{
+    text-align: center;
+
+}
+.Project .projects .projects-listing .project .info h3{
+    
+    color: #000000;
+    font-size: 48px;
+}
+.Project .projects .projects-listing .project .info p{
+    color: #818181;
+    font-size: 17px;
+}

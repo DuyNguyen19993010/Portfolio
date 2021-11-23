@@ -1,0 +1,57 @@
+.Home{
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------------------Navbar------------------------------------------------------------- */
+.Home .dividor{
+    height: 3px;
+    width: 500px;
+    position: fixed;
+    left: 39%;
+    bottom:5%;
+    background-color: #000000;
+}
+.Home .nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0);
+    position: fixed;
+    left: 40%;
+    bottom:2%;
+}
+.Home .nav-bar li{
+    float: left;
+    color: #949494;
+}
+.Home .nav-bar li .nav-option{
+    font-size: 19px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+.Home .nav-bar li .nav-option:visited{
+    color: #949494;
+    text-decoration: none;
+}
+.Home .nav-bar li .active-nav-option{
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000;
+    border-radius: 19px;
+    padding-left:20px ;
+    padding-right:20px ;
+}
+
+/* About me */
+.Home .aboutMe{
+    height: 100%;
+    width: 100%;
+}
+.Home .skills-projects{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    margin-top: 30px;
+}

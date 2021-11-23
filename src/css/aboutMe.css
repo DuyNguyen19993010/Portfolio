@@ -1,0 +1,45 @@
+.AboutMe *{
+    margin: 0;
+    padding:0;
+}
+.AboutMe{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 10px black;
+}
+.AboutMe .greetings{
+    margin: 0;
+    top:102px;
+    left: 102px;
+    position: absolute;
+}
+.AboutMe .greetings .hello{
+    font-size: 217px;
+    color: rgb(0, 0, 0);
+
+}
+.AboutMe .greetings .name{
+    font-size: 217px;
+    color: #4dff97;
+
+}
+.AboutMe .greetings .info{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    width: 1000px;
+}
+.AboutMe .profile_pic{
+    position: absolute;
+    width: 624px;
+    height: 746px;
+    top:102px;
+    left: 1402px;
+}
+.AboutMe .profile_pic img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
