@@ -8,7 +8,7 @@ const AboutMe=()=> {
       <div className="greetings">
         <h1 className="hello">HELLO</h1>
         <h1 className="name">I'M DUY</h1>
-        <p className="info">I am a student graduated from Queen Mary University of London and currently doing a Master course at UCL. I have a passion in front end development and designs for web applications.</p>
+        <p className="info">I am a student graduated from Queen Mary University of London and currently doing Master at UCL. I have passion in front end development and designs for web applications.</p>
       </div>
       <div className="profile_pic">
         <img src={profile_pic}/>
