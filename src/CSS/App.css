@@ -1,0 +1,276 @@
+.App {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/* All tabs */
+.App .tabs {
+  position: relative;
+  width: 100%;
+  height: 1084;
+  overflow: hidden;
+}
+
+/* Tab 1 */
+.App #Home #background-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,255), rgb(255, 255, 255), rgba(255,255,255,0)); 
+  margin: -300px 0 0 0;
+}
+
+.App #Home #logo-image {
+  scale: 0.1;
+  position: absolute;
+  z-index: 2;
+  left: -300px;
+  top: -270px
+}
+
+.App #Home #profile-wrapper {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 130px;
+  top: 171px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.App #Home #profile-wrapper #border-1, .App #Home #profile-wrapper #border-2 {
+  position: absolute;
+  width: 461px;
+  height: 461px;
+  background-color: none;
+  border: solid 6px;
+  z-index: 1;
+}
+
+.App #Home #profile-wrapper #border-1{
+  bottom: 1px ;
+  border-color: #002F8E;
+}
+
+.App #Home #profile-wrapper #border-2{
+  bottom: 15px;
+  left: 15px;
+  border-color: #ffffff;
+}
+
+.App #Home #profile-wrapper #profile{
+  position: absolute;
+  bottom: 33px;
+  left: 30px;
+  width: 470px;
+  height: 470px;
+  background-color: red;
+  background-size: contain;
+  z-index: 2;
+}
+
+.App #Home #profile-wrapper #profile::after{
+  content: "";
+  background: #002F8E;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.App #Home #profile-wrapper #profile:hover::after{
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.App #Home #intro-wrapper{
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  z-index: 2;
+  text-align: center;
+  left: 1000px;
+  top: 171px;
+  border-right: solid 7px white;
+  overflow: hidden;
+}
+
+.App #Home #intro-wrapper h1{
+  font-size: 50px;
+}
+
+.App #Home #intro-wrapper #intro-1{
+  margin: 160px 0 0 0;
+  color: #ffffff;
+}
+
+.App #Home #intro-wrapper #intro-2{
+  margin: 0;
+  color: #C9C9C9;
+}
+
+.App #Home #intro-wrapper #divider-2{
+  position: absolute;
+  height: 380px;
+  width: 7px;
+  background-color: #002F8E;
+  right: 20px;
+  top: 60px;
+}
+
+
+/* Tab 2 */
+
+.App #Tab2{
+  position:relative;
+  background-color: #0D0E11;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to top, rgba(0,0,0,255), rgba(0,0,0,170),rgba(0,0,0,0));
+  z-index: 2;
+}
+
+.App #Tab2 #intro-text-wrapper{
+  margin-left: 25%;
+  margin-top: 1008px;
+  width: 1034px;
+  height: 353px;
+  background-color: none;
+  z-index: 3;
+}
+
+.App #Tab2 #achievement-heading-wrapper{
+  width: 350px;
+  height: 35px;
+  background-color: none;
+  overflow: hidden;
+}
+.App #Tab2 #achievement-heading-wrapper h2{
+  margin: 0;
+  float: left;
+  color: #ffffff;
+}
+.App #Tab2 #achievement-heading-wrapper #achievement-dividor{
+  position: relative;
+  height: 3px;
+  width: 50%;
+  background-color: white;
+  float: right;
+  margin-top: 20px;
+}
+
+.App #Tab2 #intro-text-wrapper h3{
+  background-color: none;
+  text-align: justify;
+  color: #e0e0e0;
+  font-size: 16px;
+  width: 600px;
+  float: left;
+}
+
+.App #Tab2 #profile-wrapper-2{
+  position: relative;
+  width: 330px;
+  height: 330px;
+  background-color: none;
+  float: right;
+  margin: 0;
+  overflow: hidden;
+}
+
+.App #Tab2 #profile-wrapper-2 #border-1-2{
+  position: absolute;
+  right:0px;
+  bottom: 0px;
+  width: 300px;
+  height: 300px;
+  border: solid white 6px;
+}
+
+.App #Tab2 #profile-wrapper-2 #border-2-2{
+  position: absolute;
+  right:13px;
+  bottom: 13px;
+  width: 300px;
+  height: 300px;
+  border: solid white 6px;
+}
+
+.App #Tab2 #profile-wrapper-2 #profile-2{
+  position: absolute;
+  right:25px;
+  bottom: 25px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.App #Tab2 #UCL-wrapper{
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 26%;
+  width: 991px;
+  height: 403px;
+  background-color: none;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.App #Tab2 #QMUL-wrapper{
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 26%;
+  width: 991px;
+  height: 403px;
+  background-color: none;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.App #Tab2 .uni-text{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding-top: 50% ;
+}
+
+.App #Tab2 .uni-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: -5px -8px 0 0;
+}
+
+.App #Tab2 .uni-images{
+  position: relative;
+  mask-image: linear-gradient(to bottom, rgba(0,20,59,255), rgba(255, 255, 255, 0)); 
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.App #Tab2 .uni-img h1{
+  color: white;
+  text-shadow: 3px 3px black;
+  position: absolute;
+  left: 23%;
+  bottom: 26px;
+  z-index: 11;
+  opacity: 0.7;
+}
