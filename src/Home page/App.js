@@ -2,7 +2,17 @@ import '../CSS/App.css';
 import NavBar from '../Components/NavBar';
 import UCLBanner from '../SVG/UCLBanner.svg'
 import QueenMaryBanner from '../SVG/QueenMaryBanner.svg'
+import LanguageIcon from '../SVG/35-capsule.svg'
+import FrontEndIcon from '../SVG/45-astronaut.svg'
+import BackEndIcon from '../SVG/23-sputnik.svg'
+import spaceship from "../SVG/toy-space-ship-svgrepo-com.svg"
+import { useState } from 'react';
+import Skillbox from "../Components/SkillBox"
+import projects from "../Information source/Projects"
 function App() {
+  const [language,setLanguage] = useState(["HTML","CSS","Javascript","PHP","Python","C#","Java","SQL"]);
+  const [FEFramework,setFEFramework] = useState(["Reactjs","JQuery"]);
+  const [BEFramework,setBEFramework] = useState(["Django","Docker","Apache"]);
   return (
     <div className="App">
       <NavBar/>
@@ -35,6 +45,7 @@ function App() {
 
       </div>
       
+      {/* Tab 2 */}
       <div className='tabs' id='Tab2'>
         <div id="intro-text-wrapper">
             {/* Achievement wrapper */}
@@ -97,12 +108,43 @@ function App() {
 
       </div>
 
-      <div className='tabs'>
-
+      {/* Tab 3 */}
+      <div className='tabs' id="Tab3">
+          <div id="Skills">
+            <div id="skill-dividor1"></div>
+            <h2 id='Skill-text'>2.Skills</h2>
+            <div id="skill-dividor2"></div>
+          </div>
+          <div id="skill-boxes">
+            <Skillbox list = {language} svg = {LanguageIcon} title="Languages"/>
+            <Skillbox list = {FEFramework} svg = {FrontEndIcon} title="Front-end Tools"/>
+            <Skillbox list = {BEFramework} svg = {BackEndIcon} title="Back-end Tools"/>
+          </div>
       </div>
       
-      <div className='tabs'>
-
+      {/* Tab 4 */}
+      <div className='tabs' id="Tab4">
+        <div id="project-splash">
+          <h1 id='Project-text'>PROJECTS</h1>
+        </div>
+        <div id='project-box'>
+          {projects.map((project,key)=>{
+            if((key%2) == 0){
+              return (
+                <div className='project left-project'>
+                  {/* <img src={spaceship} alt="Value not found"/> */}
+                </div>
+              )
+            }
+            else{
+              return (
+                <div className='project right-project'>
+                  {/* <img src={spaceship} alt="Value not found"/> */}
+                </div>
+              )
+            }
+          })}
+        </div>
       </div>
     </div>
   );
