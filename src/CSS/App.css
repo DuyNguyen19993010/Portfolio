@@ -1,7 +1,37 @@
+body{
+  background-color: #0D0E11;
+}
+@font-face {
+	font-family: "post-no-bills";
+	src: url("../fonts/post-no-bills/postnobillscolombo-extrabold.ttf");
+}
+
+@font-face {
+	font-family: "poly-italic";
+	src: url("../fonts/Poly/Poly-Italic.ttf");
+}
+
+@font-face {
+	font-family: "poly-reg";
+	src: url("../fonts/Poly/Poly-Regular.ttf");
+}
+
+@font-face {
+	font-family: "pragati-narrow";
+	src: url("../fonts/pragati-narrow/PragatiNarrow-Regular.otf");
+}
+
+@font-face {
+	font-family: "porter-sans";
+	src: url("../fonts/porter-sans/porter-sans-inline-block.otf");
+}
+
 .App {
   width: 100%;
+  height: 100vh;
   background-color: #0D0E11;
   scroll-behavior: smooth;
+  font-family: 'poly-reg';
 }
 
 /* All tabs */
@@ -9,18 +39,19 @@
   position: relative;
   width: 100%;
   background-color: #0D0E11;
-  overflow: hidden;
 }
 
 /* Tab 1 */
-.App #Home #background-image {
-  position: relative;
+.App #Home{ 
+  padding: 0;
+}
+.App #Home #background-image { 
+  position: absolute;
   width: 100%;
-  height: 100%;
   background-size: contain;
   z-index: 0;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,255), rgb(255, 255, 255), rgba(255,255,255,0)); 
-  margin: -300px 0 0 0;
+  margin: -100px 0 0 0;
 }
 
 .App #Home #logo-image {
@@ -32,19 +63,20 @@
 }
 
 .App #Home #profile-wrapper {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 130px;
-  top: 171px;
+  position: relative;
+  width:  350px;
+  height: 350px;
+  display: inline-block;
+  margin-left: 10vw;
+  margin-right: 18vw;
+  margin-top: 25vh;
   z-index: 1;
-  overflow: hidden;
 }
 
 .App #Home #profile-wrapper #border-1, .App #Home #profile-wrapper #border-2 {
   position: absolute;
-  width: 461px;
-  height: 461px;
+  width: 100%;
+  height: 100%;
   background-color: none;
   border: solid 6px;
   z-index: 1;
@@ -56,17 +88,17 @@
 }
 
 .App #Home #profile-wrapper #border-2{
-  bottom: 15px;
-  left: 15px;
+  bottom: 10px;
+  left: 10px;
   border-color: #BEB786;
 }
 
 .App #Home #profile-wrapper #profile{
   position: absolute;
-  bottom: 33px;
-  left: 30px;
-  width: 470px;
-  height: 470px;
+  bottom: 22px;
+  left: 22px;
+  width: 100%;
+  height: 100%;
   background-color: red;
   background-size: contain;
   z-index: 2;
@@ -90,19 +122,20 @@
 }
 
 .App #Home #intro-wrapper{
-  position: absolute;
-  width: 700px;
-  height: 500px;
+  position: relative;
+  width: 500px;
+  height: 400px;
   z-index: 2;
   text-align: center;
-  left: 1000px;
-  top: 171px;
+  margin: 0 auto;
+  display: inline-block;
   border-right: solid 7px #BEB786;
   overflow: hidden;
 }
 
 .App #Home #intro-wrapper h1{
-  font-size: 50px;
+  font-family: 'post-no-bills';
+  font-size: 4vw;
 }
 
 .App #Home #intro-wrapper #intro-1{
@@ -129,7 +162,6 @@
 
 .App #Tab2{
   position:relative;
-  background-color: #0D0E11;
   width: 100%;
   overflow: hidden;
   mask-image: linear-gradient(to top, rgba(0,0,0,255), rgba(0,0,0,170), rgba(0,0,0,170), rgba(0,0,0,170),rgba(0,0,0,0));
@@ -138,38 +170,29 @@
 
 .App #Tab2 #intro-text-wrapper{
   margin: 0 auto;
-  margin-top: 408px;
-  width: 1034px;
-  height: 353px;
-  background-color: none;
+  margin-top: 20%;
+  width: 80%;
+  height: 20%;
   z-index: 3;
 }
 
 .App #Tab2 #achievement-heading-wrapper{
-  width: 350px;
-  height: 35px;
-  background-color: none;
-  overflow: hidden;
-}
-.App #Tab2 #achievement-heading-wrapper h2{
-  margin: 0;
-  float: left;
-  color: #BEB786;
-}
-.App #Tab2 #achievement-heading-wrapper #achievement-dividor{
   position: relative;
-  height: 3px;
-  width: 50%;
-  background-color: #BEB786;
-  float: right;
-  margin-top: 20px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.App #Tab2 #achievement-heading-wrapper #Achievement{
+  font-family: 'post-no-bills';
+  margin: 0;
+  font-size: 15vw;
+  color: #BEB786;
 }
 
 .App #Tab2 #intro-text-wrapper h3{
   background-color: none;
   text-align: justify;
   color: #e0e0e0;
-  font-size: 16px;
+  font-size: 1.5vw;
   width: 600px;
   float: left;
 }
@@ -209,6 +232,13 @@
   width: 300px;
   height: 300px;
   background-color: white;
+}
+
+.App #Tab2 #intro-text-wrapper .graduation{
+  background-color: green;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .App #Tab2 #UCL-wrapper{
@@ -264,6 +294,7 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+  text-align: center;
 }
 
 .App #Tab2 .uni-img h1{
@@ -280,71 +311,58 @@
 /* Tab 3 */
 
 .App #Tab3 {
+  margin: 0;
   position:relative;
-  background-color: #0D0E11;
+  background-color: transparent;
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .App #Tab3 #Skills{
-  width: 450px;
-  height: 45px;
   position: relative;
-  margin: 0 auto;
-  margin-top: 100px;
-  left:90px;
+  margin: 0;
+  width: 100%;
+  height: 40%;
+  text-align: center;
 }
 
 .App #Tab3 #Skills #Skill-text{
-  margin: 0 10px 0 10px;
+  position: relative;
+  margin: 0;
+  font-family: 'post-no-bills';
+  font-size: 20vw;
   color: #BEB786;
-  float:left;
-}
-
-.App #Tab3 #Skills #skill-dividor1{
-  position: relative;
-  height: 3px;
-  width: 100px;
-  background-color: #BEB786;
-  float: left;
-  margin-top: 20px;
-}
-
-.App #Tab3 #Skills #skill-dividor2{
-  position: relative;
-  height: 3px;
-  width: 100px;
-  background-color: #BEB786;
-  float: left;
-  margin-top: 20px;
 }
 
 .App #Tab3 #skill-boxes{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
   position: relative;
-  overflow: hidden;
+  width: 75%;
   margin: 0 auto;
-  margin-top: 20px;
-  left:100px;
-  width: 1091px;
-}
-.App #Tab3 #skill-boxes .skill-box .skill-set-dividor{
-  width: 30px;
-  height: 6px;
-  color: black;
 }
 .App #Tab3 #skill-boxes .skill-box{
-  float: left;
-  margin: 0;
-  margin: 0px 20px 0 0;
-  width: 300px;
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
   border-radius: 30px;
   color:white;
+  word-break: break-all;
+}
+
+.App #Tab3 #skill-boxes .skill-box h1{
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'poly-italic';
 }
 
 .App #Tab3 #skill-boxes .skill-box p{
-  font-weight: 600;
+  margin: 0;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 110%;
 }
 
 .App #Tab3 #skill-boxes .skill-box img{
@@ -352,16 +370,18 @@
   height: 150px;
 }
 
+/* Tab 4 PROJECT */
 
 .App #Tab4{
   position: relative;
-  background-color: #0D0E11;
+  background-color: transparent;
   color: #BEB786;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .App #Tab4 #project-splash{
+
   position: absolute;
   background-color: transparent;
   width: 100%;
@@ -372,31 +392,126 @@
 .App #Tab4 #Project-text{
   color: #BEB786;
   font-size: 1500%;
-  margin-left: 22%;
-  margin-top: 17%;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .App #Tab4 #project-box{
   position: relative;
   background-color: transparent;  
-  width: 100%;
-  height: 100vh;
+  width: 70%;
+  height: 100%;
   z-index: 4;
-}
-
-.App #Tab4 #project-box .right-project{
-  position: relative;
-  background-color: red;
-  width: 30%;
-  height: 40%;
   margin: 0 auto;
-  left: 20%;
+  display: grid;
+}
+.App #Tab4 #project-box .project{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 10%;
+  z-index: 7;
+  display: grid;
 }
 
-.App #Tab4 #project-box .left-project{
+.App #Tab4 #project-box .ship-right{
   position: relative;
-  background-color: green;
-  width: 30%;
-  height: 40%;
-  right: 20%;
+  z-index: 8;
+  grid-template-columns: 60% 40%;
+}
+
+.App #Tab4 #project-box .ship-left{
+  position: relative;
+  z-index: 8;
+  grid-template-columns: 40% 60%;
+}
+
+.App #Tab4 #project-box .project-shuttle-wrapper{
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  z-index: 8;
+}
+
+.App #Tab4 #project-box .ship-right .summary-wrapper{
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 30% 70%;
+}
+
+.App #Tab4 #project-box .ship-left .summary-wrapper{
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 70% 30%;
+}
+
+.App #Tab4 #project-box .project-shuttle-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.App #Tab4 #project-box  .project-shuttle{
+  z-index: 10000;
+  margin-top: 50px;
+  scale: 1.5;
+}
+.App #Tab4 #project-box .summary-text-wrapper{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.App #Tab4 #project-box .summary-text-wrapper .project-heading{
+  margin: 0;
+  font-family: 'post-no-bills';
+  font-size: 200%;
+  color: #BEB786;
+}
+.App #Tab4 #project-box .summary-text-wrapper .project-subheading{
+  margin: 0;
+  font-family: 'poly-italic';
+  font-size: 25px;
+}
+
+.App #Tab4 #project-box .summary-text-wrapper .tools{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'pragati-narrow';
+}
+
+.App #Tab4 #project-box .summary-text-wrapper .tools .tool{
+  background-color: white;
+  display:inline-block;
+  padding: 0 6px 0 6px;
+  margin-left: 6px;
+  width: auto;
+  border-radius: 25px;
+  color: #0D0E11;
+}
+.App #Tab4 #project-box .project-initials-wrapper{
+  text-align: center;
+  font-family: 'porter-sans';
+  width: 100%;
+  word-break: break-all;
+}
+.App #Tab4 #project-box .project-initials-wrapper h1{
+  position: relative;
+  font-size: 600%;
+}
+
+
+.App #footer{
+  position: relative;
+  background-color: blue;
+  color: #BEB786;
+  width: 100%;
+  height: 100px;
 }
