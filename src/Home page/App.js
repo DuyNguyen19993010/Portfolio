@@ -7,14 +7,13 @@ import LanguageIcon from '../SVG/35-capsule.svg'
 import FrontEndIcon from '../SVG/45-astronaut.svg'
 import BackEndIcon from '../SVG/23-sputnik.svg'
 import Shuttle from '../SVG/31-shuttle.svg'
-import spaceship from "../SVG/toy-space-ship-svgrepo-com.svg"
 import { useState } from 'react';
 import Skillbox from "../Components/SkillBox"
 import projects from "../Information source/Projects"
 function App() {
-  const [language,setLanguage] = useState(["HTML","CSS","Javascript","PHP","Python","C#","Java","SQL"]);
-  const [FEFramework,setFEFramework] = useState(["Reactjs","JQuery"]);
-  const [BEFramework,setBEFramework] = useState(["Django","Docker","Apache"]);
+  const [language] = useState(["HTML","CSS","Javascript","PHP","Python","C#","Java","SQL"]);
+  const [FEFramework] = useState(["Reactjs","JQuery"]);
+  const [BEFramework] = useState(["Django","Docker","Apache"]);
   return (
     <div className="App">
       <NavBar/>
@@ -129,13 +128,13 @@ function App() {
           {
             projects.map((project, key)=>{
               
-              if(key%2==0){
+              if(key%2===0){
 
                 return (
                 <div className='project ship-right'>
                   <div className='summary-wrapper'>
                     <div className='project-shuttle-wrapper'>
-                      <img className='project-shuttle' src={Shuttle}/>
+                      <img alt="Could not load shuttle" className='project-shuttle' src={Shuttle}/>
                     </div>
                     <div className='summary-text-wrapper'>
                       <h1 className='project-heading'>{project.name}</h1>
@@ -182,7 +181,7 @@ function App() {
                         </div>
 
                         <div className='project-shuttle-wrapper'>
-                          <img className='project-shuttle' src={Shuttle}/>
+                          <img alt="Could not load shuttle" className='project-shuttle' src={Shuttle}/>
                         </div>
                       </div>
                     

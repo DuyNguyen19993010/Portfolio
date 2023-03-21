@@ -1,5 +1,5 @@
 import '../CSS/navbar.css';
-import React, { useState } from "react";
+import React from "react";
 
 const SkillBox = (props) =>{
 
