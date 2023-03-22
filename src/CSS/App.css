@@ -198,7 +198,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   background-color: rgba(255, 255, 255, 0.818);
   font-size: 36px;
 }
