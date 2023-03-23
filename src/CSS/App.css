@@ -52,6 +52,7 @@ body{
 	src: url("../fonts/Lexend/LexendDeca-VariableFont_wght.ttf");
 }
 html,body{
+  background-color: red;
   width: 100vw;
   height: 100vh;
 }
