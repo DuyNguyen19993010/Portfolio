@@ -71,7 +71,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width:calc(100% - 1px);
   height: 100vh;
   overflow: hidden;
   background-color: white;
@@ -81,7 +81,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 /* Home tab */
 .App .Tab{
   margin: 0;
-  width: 100%;
+  width:calc(100% - 1px);
   height: 100vh;
   position: relative;
   z-index:4;
