@@ -37,7 +37,7 @@ function Aboutme() {
     <div id="Aboutme" className='Tab'>
       <p id='about-me-header'>About Me</p>
       <p id='about-me-sub-header'>Eternal love for Web development & Soft-Eng</p>
-      <p>
+      <p id='about-me-1-2-wrapper'>
       <p id='about-me-text-1'>UCL Master Graduate</p><p id='about-me-text-2'><GlitchText theme='white' text={phrases[current_phrase]}/></p>
       </p>
       <p id='about-me-text-3'>

@@ -254,6 +254,11 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   font-size: 15vw;
   line-height: 180px;
 }
+
+.App #Project {
+  position: relative;
+  z-index: 5;
+}
 @media screen and (max-width:800px){
 
   .App #Home .menu-option{
@@ -325,18 +330,77 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   }
 
   .App #Aboutme #about-me-text-3{
+    padding: 0;
     font-family: 'kosugi';
     font-size: 20px;
     width: 70%;
-    padding-bottom: 30px;
     border-bottom: #0D0E11 solid 3px;
 
   }
 
   .App #Aboutme #tools{
     font-family: 'lexend';
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 5vh;
+    line-height: 50px;
+  }
+  
+}
+@media screen and (max-height:620px) {
+    
+  .App #Aboutme p{
+    margin: 0;
+  }
+
+
+  .App #Aboutme #about-me-header{
+    font-family: 'poly';
+    font-size: 20px;
+    border-bottom: #0D0E11 solid 3px;
+    margin-bottom: 10px;
+  }
+
+  .App #Aboutme #about-me-sub-header{
+    padding: 0;
+    margin: 0;
+    font-family: 'post-no-bills-light';
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .App #Aboutme #about-me-1-2-wrapper{
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+  }
+  .App #Aboutme #about-me-text-1{
+    margin: 0;
+    display: inline-block;
+    font-family: 'koulen';
+    margin-right: 10px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+
+  .App #Aboutme #about-me-text-2{
+    margin: 0;
+    display: inline-block;
+    font-family: 'koulen';
+    line-height: 15px;
+    font-size: 15px;
+  }
+
+  .App #Aboutme #about-me-text-3{
+    padding: 0;
+    font-family: 'kosugi';
+    font-size: 13px;
+    width: 70%;
+    border-bottom: #0D0E11 solid 3px;
+
+  }
+
+  .App #Aboutme #tools{
+    font-family: 'lexend';
+    font-size: 10vh;
+    line-height: 50px;
   }
   
 }
