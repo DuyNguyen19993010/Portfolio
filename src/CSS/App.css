@@ -84,7 +84,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
 .App #intro-vid{
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   object-fit: cover ;
   bottom: 0;
@@ -341,7 +341,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   .App #Aboutme #tools{
     font-family: 'lexend';
     font-size: 5vh;
-    line-height: 50px;
+    line-height:50px;
   }
   
 }
@@ -394,7 +394,6 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     font-size: 13px;
     width: 70%;
     border-bottom: #0D0E11 solid 3px;
-
   }
 
   .App #Aboutme #tools{
