@@ -52,8 +52,8 @@ body{
 	src: url("../fonts/Lexend/LexendDeca-VariableFont_wght.ttf");
 }
 html,body{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 *{
   text-decoration: none;
@@ -71,7 +71,6 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow: hidden;
   background-color: white;
 }
@@ -80,20 +79,21 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App .Tab{
   overflow: hidden ;
   margin: 0;
-  height: 100vh;
   position: relative;
   z-index:4;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App #intro-vid{
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100%;
   position: absolute;
   object-fit: cover ;
   bottom: 0;
   right: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -262,6 +262,92 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
 .App #Project {
   position: relative;
+  padding-left: 10%;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.App #Project #project-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.App #Project #project-header{
+  padding-bottom: 10px;
+  font-size: 9vw;
+  line-height: 100px;
+  font-family: 'koulen';
+}
+
+.App #Project #project-name{
+  padding-bottom: 10px;
+  font-size: 4vw;
+  font-family: 'koulen';
+  line-height: 30px;
+}
+.App #Project #project-sub-info{
+  font-size: 2.5vw;
+  font-family: 'post-no-bills-light';
+  line-height: 45px;
+}
+.App #Project #project-des{
+  font-size: 2vw;
+  width: 70%;
+  font-family: 'kosugi';
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.App #Project #interaction-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  line-height: 100px;
+}
+
+.App #Project #interaction-wrapper button, .App #Project #interaction-wrapper a{
+  background-color: transparent;
+  border: none;
+  font-size: 13vw;
+  color: transparent;
+  -webkit-text-stroke: 3px black;
+}
+.App #Project #interaction-wrapper button:hover, .App #Project #interaction-wrapper a:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  color: black;
+  -webkit-text-stroke: 0px black;
+}
+
+.App #Project #project-counter-wrapper{
+  background-color: rgb(221, 221, 221);
+  width: 5px;
+  height: 50vh;
+  position: absolute;
+  right: 20%;
+  top:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.App #Project .project-counter-section{
+  cursor: pointer;
+  width: 7px;
+  background-color: none;
+}
+.App #Project .project-counter-section-selected{
+  cursor: pointer;
+  width: 7px;
+  background-color: black;
 }
 @media screen and (max-width:800px){
 
@@ -348,6 +434,34 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     font-size: 7vh;
     line-height:55px;
   }
+
+
+.App #Project #project-header{
+  padding-bottom: 10px;
+  font-size: 9vw;
+  line-height: 50px;
+  font-family: 'koulen';
+}
+
+.App #Project #project-name{
+  padding-bottom: 10px;
+  width: 250px;
+  font-size: 8vw;
+  font-family: 'koulen';
+  line-height: 45px;
+}
+.App #Project #project-sub-info{
+  font-size: 4vw;
+  font-family: 'post-no-bills-light';
+  line-height: 40px;
+}
+.App #Project #project-des{
+  font-size: 4.5vw;
+  width: 70%;
+  font-family: 'kosugi';
+  line-height: 30px;
+  padding-bottom: 10px;
+}
   
 }
 @media screen and (max-height:620px) {
@@ -408,5 +522,6 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     font-size: 10vh;
     line-height: 50px;
   }
+  
   
 }
