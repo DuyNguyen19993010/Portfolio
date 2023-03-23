@@ -51,7 +51,11 @@ body{
 	font-family: "lexend";
 	src: url("../fonts/Lexend/LexendDeca-VariableFont_wght.ttf");
 }
-body,div,h1,h2,h3,h4,p{
+html,body{
+  width: 100vw;
+  height: 100vh;
+}
+html,body,div,h1,h2,h3,h4,p{
   text-decoration: none;
   padding: 0;
   margin: 0;
