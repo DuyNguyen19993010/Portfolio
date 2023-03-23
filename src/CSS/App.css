@@ -52,8 +52,8 @@ body{
 	src: url("../fonts/Lexend/LexendDeca-VariableFont_wght.ttf");
 }
 html,body{
-  width: 100vw;
-  height: calc(100 * var(--vh));
+  width: 100%;
+  height: 100%;
 }
 html,body,div,h1,h2,h3,h4,p{
   text-decoration: none;
@@ -71,7 +71,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: white;
 }
