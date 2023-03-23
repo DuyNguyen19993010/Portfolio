@@ -220,6 +220,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   font-size: 48px;
   border-bottom: #0D0E11 solid 3px;
   width: 300px;
+  margin-bottom: 20px;
 }
 
 .App #Aboutme #about-me-sub-header{
@@ -307,8 +308,10 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
   .App #Aboutme #about-me-header{
     font-family: 'poly';
-    font-size: 40px;
+    font-size: 30px;
     border-bottom: #0D0E11 solid 3px;
+    width: 150px;
+    margin-bottom: 10px;
   }
 
   .App #Aboutme #about-me-sub-header{
@@ -344,8 +347,8 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
   .App #Aboutme #tools{
     font-family: 'lexend';
-    font-size: 5vh;
-    line-height:50px;
+    font-size: 7vh;
+    line-height:55px;
   }
   
 }
@@ -360,6 +363,8 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     font-family: 'poly';
     font-size: 20px;
     border-bottom: #0D0E11 solid 3px;
+    width: 90px;
+    margin-bottom: 10px;
   }
 
   .App #Aboutme #about-me-sub-header{
