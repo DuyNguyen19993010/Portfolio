@@ -78,6 +78,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
 /* Home tab */
 .App .Tab{
+  overflow: hidden ;
   margin: 0;
   height: 100vh;
   position: relative;
@@ -213,7 +214,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 }
 
 
-.App #Aboutme #about-me-header{
+.tab-header{
   font-family: 'poly';
   font-size: 48px;
   border-bottom: #0D0E11 solid 3px;
@@ -224,7 +225,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App #Aboutme #about-me-sub-header{
   font-family: 'post-no-bills-light';
   font-size: 40px;
-  line-height: 40px;
+  line-height: 55px;
 }
 .App #Aboutme #about-me-text-1{
   margin: 0;
@@ -261,7 +262,6 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
 .App #Project {
   position: relative;
-  z-index: 5;
 }
 @media screen and (max-width:800px){
 
@@ -304,7 +304,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   }
 
 
-  .App #Aboutme #about-me-header{
+  .tab-header{
     font-family: 'poly';
     font-size: 30px;
     border-bottom: #0D0E11 solid 3px;
@@ -315,7 +315,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   .App #Aboutme #about-me-sub-header{
     font-family: 'post-no-bills-light';
     font-size: 20px;
-    line-height: 20px;
+    line-height: 35px;
   }
   .App #Aboutme #about-me-text-1{
     margin: 0;
@@ -357,12 +357,12 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   }
 
 
-  .App #Aboutme #about-me-header{
+  .tab-header{
     font-family: 'poly';
     font-size: 20px;
     border-bottom: #0D0E11 solid 3px;
     width: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .App #Aboutme #about-me-sub-header{
@@ -370,7 +370,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     margin: 0;
     font-family: 'post-no-bills-light';
     font-size: 15px;
-    line-height: 15px;
+    line-height: 20px;
   }
   .App #Aboutme #about-me-1-2-wrapper{
     padding: 0;
