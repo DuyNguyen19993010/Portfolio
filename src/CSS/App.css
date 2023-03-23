@@ -86,7 +86,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   object-fit: cover ;
   bottom: 0;
