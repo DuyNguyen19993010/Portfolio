@@ -326,7 +326,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
   .App #Aboutme #about-me-text-3{
     font-family: 'kosugi';
-    font-size: 24px;
+    font-size: 20px;
     width: 70%;
     padding-bottom: 30px;
     border-bottom: #0D0E11 solid 3px;
