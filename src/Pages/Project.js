@@ -1,5 +1,5 @@
 import '../CSS/App.css';
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import projects from '../Information source/Projects';
 function Project() {
   const project_height = Math.floor(100/projects.length);
@@ -22,7 +22,7 @@ function Project() {
       <div id='project-wrapper'>
         <div id='project-info'>
           <p id='project-name'>{projects[selectedProject].name}</p>
-          <p id='project-sub-info'>{projects[selectedProject].time} / {projects[selectedProject].member!="Individual"? (projects[selectedProject].member +' members'):('Individual') }</p>
+          <p id='project-sub-info'>{projects[selectedProject].time} / {projects[selectedProject].member!=="Individual"? (projects[selectedProject].member +' members'):('Individual') }</p>
           <p id='project-des'>{projects[selectedProject].summary}</p>
         </div>
         <div id='project-screenshot'>
@@ -35,7 +35,7 @@ function Project() {
       </div>
       <div id='project-counter-wrapper'>
         {projects.map((project,key)=>{
-          if(key == selectedProject)
+          if(key === selectedProject)
           {
             return <div key = {key} onClick={()=>{selectProject(key)}} style={{height:project_height_style}} className='project-counter-section-selected'></div>
           }
