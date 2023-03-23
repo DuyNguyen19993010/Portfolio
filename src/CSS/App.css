@@ -269,7 +269,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .App #Project #project-wrapper {
@@ -307,7 +307,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 .App #Project #interaction-wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   line-height: 100px;
 }
