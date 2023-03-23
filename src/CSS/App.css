@@ -83,6 +83,8 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 }
 
 .App #intro-vid{
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   position: absolute;
