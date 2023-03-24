@@ -604,6 +604,12 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
     
 }
 
+@media screen and (max-width:400px){
+  .App #Resume .page{
+    width: 80vw;
+  }
+}
+
 /* Small Phone screen */
 
 @media screen and (max-height:620px) {
