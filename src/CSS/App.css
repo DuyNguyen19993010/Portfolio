@@ -382,7 +382,7 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 

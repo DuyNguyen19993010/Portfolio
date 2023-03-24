@@ -1,9 +1,7 @@
 import '../CSS/App.css';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import { useState } from 'react';
 import Cv_p0 from '../Resume/2023_Cv_00.png'
 import Cv_p1 from '../Resume/2023_Cv_01.png'
-import {ArrowRightCircle} from 'react-bootstrap-icons'
 function Resume() {
   const pages = [Cv_p0, Cv_p1]
   const [pageNumber,setPageNumber] = useState(0);
@@ -18,7 +16,7 @@ function Resume() {
   return (
     <div id="Resume" className='Tab'>
       <div id='resume-wrapper'>
-        <img onClick={()=>nextPage()} className='page' src={pages[pageNumber]}/>
+        <img alt='Failed to load CV page' onClick={()=>nextPage()} className='page' src={pages[pageNumber]}/>
         <p id='page-counter'>
           {pageNumber+1} / {pages.length}
         </p>
