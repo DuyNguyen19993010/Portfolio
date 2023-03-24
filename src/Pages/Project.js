@@ -24,6 +24,11 @@ function Project() {
           <p id='project-name'>{projects[selectedProject].name}</p>
           <p id='project-sub-info'>{projects[selectedProject].time} / {projects[selectedProject].member!=="Individual"? (projects[selectedProject].member +' members'):('Individual') }</p>
           <p id='project-des'>{projects[selectedProject].summary}</p>
+          <div id='project-tools'>
+            {projects[selectedProject].tools.map((tool,key)=>{
+              return <p className='project-tool' style = {{color:tool.color}}id='project-tool'>{tool.name}</p> 
+            })}
+          </div>
         </div>
         <div id='project-screenshot'>
 

@@ -2,7 +2,6 @@ import '../CSS/App.css';
 import Home from './Home'
 import Aboutme from './Aboutme'
 import Project from './Project'
-import Education from './Education'
 import { useState } from 'react';
 import {useTransition, animated} from 'react-spring'
 import {X} from 'react-bootstrap-icons';
@@ -48,14 +47,12 @@ function App() {
         <NavLink to='/' className={({isActive})=>!isActive?("nav-options"):("active-nav-options")} onClick={()=>{setNav(false)}}>#Home.</NavLink>
         <NavLink to='/Aboutme/' className={({isActive})=>!isActive?("nav-options"):("active-nav-options")} onClick={()=>{setNav(false)}}>#About.Me.</NavLink>
         <NavLink to='/Project/' className={({isActive})=>!isActive?("nav-options"):("active-nav-options")} onClick={()=>{setNav(false)}}>#Project.</NavLink>
-        <NavLink to='/Education/' className={({isActive})=>!isActive?("nav-options"):("active-nav-options")} onClick={()=>{setNav(false)}}>#Education.</NavLink>
         <NavLink to='/Resume/' className={({isActive})=>!isActive?("nav-options"):("active-nav-options")} onClick={()=>{setNav(false)}}>#Resume.</NavLink>
       </animated.div>) : ('')
       )}
       <Routes>
         <Route path='/Aboutme/' element={<Aboutme/>}/>
         <Route path='/Project/' element={<Project/>}/>
-        <Route path='/Education/' element={<Education/>}/>
         <Route path='/' element={<Home/>}/>
       </Routes>
     </div>
