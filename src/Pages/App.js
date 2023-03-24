@@ -2,6 +2,7 @@ import '../CSS/App.css';
 import Home from './Home'
 import Aboutme from './Aboutme'
 import Project from './Project'
+import Resume from './Resume'
 import { useState } from 'react';
 import {useTransition, animated} from 'react-spring'
 import {X} from 'react-bootstrap-icons';
@@ -51,6 +52,7 @@ function App() {
       </animated.div>) : ('')
       )}
       <Routes>
+        <Route path='/Resume/' element={<Resume/>}/>
         <Route path='/Aboutme/' element={<Aboutme/>}/>
         <Route path='/Project/' element={<Project/>}/>
         <Route path='/' element={<Home/>}/>

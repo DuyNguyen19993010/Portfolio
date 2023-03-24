@@ -376,6 +376,64 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   border-radius: 5px;
 }
 
+.App #Resume{
+  background-color: rgba(255, 255, 255, 0.88);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.App #Resume #resume-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  font-size: 30px;
+  width: 50vw;
+  font-family: 'kosugi';
+}
+
+.App #Resume .page{
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  width: 65%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 40px #0d0e1175;
+  transition: 0.5s;
+}
+
+.App #Resume #arrow-button:hover{
+  margin-top: 30px;
+  color: black;
+}
+
+.App #Resume #download-text{
+  font-size: 3.5vw;
+  font-family: 'post-no-bills-light';
+  width: 23vw;
+  margin-left: 40px;
+  display: inline;
+
+}
+
+.App #Resume #download-text a{
+  display: inline;
+  transition: 0.5s;
+  color: grey;
+}
+
+
+.App #Resume #download-text a:hover{
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
 
 /* Half desktop */
 
@@ -466,44 +524,84 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
   }
 
 
-.App #Project #project-header{
-  padding-bottom: 10px;
-  font-size: 9vw;
-  line-height: 50px;
-  font-family: 'koulen';
-}
+  .App #Project #project-header{
+    padding-bottom: 10px;
+    font-size: 9vw;
+    line-height: 50px;
+    font-family: 'koulen';
+  }
 
-.App #Project #project-name{
-  padding-bottom: 10px;
-  width: 250px;
-  font-size: 8vw;
-  font-family: 'koulen';
-  line-height: 45px;
-}
-.App #Project #project-sub-info{
-  font-size: 4vw;
-  font-family: 'post-no-bills-light';
-  line-height: 40px;
-}
-.App #Project #project-des{
-  font-size: 4.5vw;
-  width: 70%;
-  font-family: 'kosugi';
-  line-height: 30px;
-  padding-bottom: 10px;
-}
-.App #Project #project-tools #project-tool{
-  font-size: 2vw;
-  margin-right: 10px;
-  background-color: black;
-  display: inline-block;
-  margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 5px;
-}
+  .App #Project #project-name{
+    padding-bottom: 10px;
+    width: 250px;
+    font-size: 8vw;
+    font-family: 'koulen';
+    line-height: 45px;
+  }
+  .App #Project #project-sub-info{
+    font-size: 4vw;
+    font-family: 'post-no-bills-light';
+    line-height: 40px;
+  }
+  .App #Project #project-des{
+    font-size: 4.5vw;
+    width: 70%;
+    font-family: 'kosugi';
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  .App #Project #project-tools #project-tool{
+    font-size: 2vw;
+    margin-right: 10px;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+  }
+
+  .App #Resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .App #Resume .page{
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    width: 50vw;
+    border-radius: 10px;
+    box-shadow: 0px 5px 40px #0d0e1175;
+    transition: 0.5s;
+  }
 
   
+  .App #Resume #resume-wrapper{
+    margin: 0;
+  }
+
+  .App #Resume #arrow-button:hover{
+    margin-top: 30px;
+    color: black;
+  }
+
+  .App #Resume #download-text{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'post-no-bills-light';
+    width: 50vw;
+    display: inline;
+    margin: 0;
+  }
+
+  .App #Resume #download-text p{
+    display: inline;
+  }
+    
 }
 
 /* Small Phone screen */
