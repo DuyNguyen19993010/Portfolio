@@ -10,7 +10,7 @@ function Home() {
           <p id="name">Duy.N</p>
           <Link to='/Aboutme/'><p className='menu-option'><GlitchText theme='white' text='About Me'/></p></Link>
           <Link to='/Project/'><p className='menu-option'><GlitchText theme='white' text='PR - JEK'/></p></Link>
-          <Link to='/Education/'><p className='menu-option'><GlitchText theme='white' text='Education'/></p></Link>
+          <Link to='/Resume/'><p className='menu-option'><GlitchText theme='white' text='Resume'/></p></Link>
         </div>
       </div>
   );
