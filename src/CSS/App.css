@@ -439,9 +439,10 @@ a:hover, a:active { cursor: pointer; text-decoration: none; color:black;}
 
 @media screen and (max-width:800px){
 
-  .App #Home .menu-option{
+  .App #Home #menu-options{
     display: none;
   }
+
 
 
   .App #nav-button{
